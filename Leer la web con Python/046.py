@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = raw_input("Escribe el sitio web:")
+url = raw_input("Escribe el sitio web: ")
 r=requests.get("http://"+url)
 data = r.text
 soup = BeautifulSoup(data)
